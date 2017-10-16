@@ -1,0 +1,598 @@
+/* CSS Document */
+body {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #333;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;/*设置字体抗锯齿或者平滑度*/
+	 text-shadow: 1px 1px 1px rgba(151, 24, 64, 0.2);
+	
+}
+.st-container
+	{
+    width: 100%;
+    height: 100%;
+    background: -webkit-radial-gradient(center,farthest-corner,#01a08e,#1c5c99); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(center,farthest-corner,#01a08e,#1c5c99); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(center,farthest-corner,#01a08e,#1c5c99); /* Firefox 3.6 - 15 */
+    background: radial-gradient(center,farthest-corner,#01a08e,#1c5c99); /* 标准的语法（必须放在最后） */
+	position: absolute;
+    left: 0%;
+    top: 0%;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.clr {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+.st-container > input,
+.st-container > a {
+    height:11.1111%;
+    width:100px;
+    position: fixed;
+    right: 0;
+    cursor: pointer;
+}
+.st-container > input {
+    opacity: 0;
+    
+    z-index: 1000;
+}
+.st-container > a {
+    z-index: 10;
+    font-weight: 700;
+    font-size: 16px;
+    background: #09476c;
+    text-align:left;
+	padding-left: 10px;
+    color: #fff;
+    transition: background 0.3s ease;
+    text-shadow: 1px 1px 1px rgba(151, 24, 64, 0.2);
+	  display: -webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-orient: vertical;
+    
+	
+}
+#st-container-1,
+#st-container-1 + a {
+    top: 0%;
+}
+#st-container-2,
+#st-container-2 + a {
+    top: 11.111%;
+}
+#st-container-3,
+#st-container-3 + a {
+    top: 22.222%;
+}
+#st-container-4,
+#st-container-4 + a {
+    top: 33.333%;
+}
+#st-container-5,
+#st-container-5 + a {
+    top: 44.444%;
+}
+#st-container-6,
+#st-container-6 + a {
+    top: 55.555%;
+}
+#st-container-7,
+#st-container-7 + a {
+    top: 66.666%;
+}
+#st-container-8,
+#st-container-8 + a {
+    top: 77.777%;
+}
+#st-container-9,
+#st-container-9 + a {
+    top: 88.888%;
+}
+.st-container input:hover +a /*状态*/
+{
+	background: #09476c;
+}
+.st-container input:checked + a:after {
+	content: "";
+	border-bottom-color:#21818a;
+	position: absolute;
+}
+.st-container input:checked + a {
+	background:#21818a;
+}
+.st-container input:hover:not(:checked) + a
+{
+	background:#063145;
+}
+
+
+.st-scroll,.st-panel
+{
+	width:100%;
+	height:100%;
+	position: relative;
+}
+#st-container-1:checked ~ .st-scroll {
+	-webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-o-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	transform: translateY(0%);
+}
+
+#st-container-2:checked ~ .st-scroll {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+#st-container-3:checked ~ .st-scroll {
+	-webkit-transform: translateY(-200%);
+	-moz-transform: translateY(-200%);
+	-o-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%);
+}
+
+#st-container-4:checked ~ .st-scroll {
+	-webkit-transform: translateY(-300%);
+	-moz-transform: translateY(-300%);
+	-o-transform: translateY(-300%);
+	-ms-transform: translateY(-300%);
+	transform: translateY(-300%);
+}
+
+#st-container-5:checked ~ .st-scroll {
+	-webkit-transform: translateY(-400%);
+	-moz-transform: translateY(-400%);
+	-o-transform: translateY(-400%);
+	-ms-transform: translateY(-400%);
+	transform: translateY(-400%);
+}
+#st-container-6:checked ~ .st-scroll {
+	-webkit-transform: translateY(-500%);
+	-moz-transform: translateY(-500%);
+	-o-transform: translateY(-500%);
+	-ms-transform: translateY(-500%);
+	transform: translateY(-500%);
+}
+
+#st-container-7:checked ~ .st-scroll {
+	-webkit-transform: translateY(-600%);
+	-moz-transform: translateY(-600%);
+	-o-transform: translateY(-600%);
+	-ms-transform: translateY(-600%);
+	transform: translateY(-600%);
+}
+
+#st-container-8:checked ~ .st-scroll {
+	-webkit-transform: translateY(-700%);
+	-moz-transform: translateY(-700%);
+	-o-transform: translateY(-700%);
+	-ms-transform: translateY(-700%);
+	transform: translateY(-700%);
+}
+
+#st-container-9:checked ~ .st-scroll {
+	-webkit-transform: translateY(-800%);
+	-moz-transform: translateY(-800%);
+	-o-transform: translateY(-800%);
+	-ms-transform: translateY(-800%);
+	transform: translateY(-800%);
+}
+.st-scroll {
+    left: 0;
+    top: 0;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-backface-visibility:hidden;
+    -webkit-transition:all 0.6s ease-in-out;
+    -moz-transition:all 0.6s ease-in-out;
+    -o-transition:all 0.6s ease-in-out;
+    -ms-transition:all 0.6s ease-in-out;
+    transition:all 0.6s ease-in-out;
+}
+/*各个部分的内容填充*/
+/*旋转动画*/
+@-webkit-keyframes revolve 
+{
+	0%
+	{
+		-webkit-transform: rotate(0deg)
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg)
+	}
+}
+.sun
+{
+	animation: revolve 60s linear 0s infinite ;
+	width:400px;
+	height:400px;
+	text-align: center;
+	display: inline;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-200px;
+	margin-top:-200px;
+
+}
+.mercury
+{
+	animation: revolve 60s linear 0s infinite ;
+	width:400px;
+	height:400px;
+	text-align: center;
+	display: inline;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-200px;
+	margin-top:-200px;
+
+}
+.venus
+{
+	
+	animation: revolve 60s linear 0s infinite ;
+	width:400px;
+	height:400px;
+	text-align: center;
+	display: inline;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-200px;
+	margin-top:-200px;
+
+}
+
+.earth
+{
+	animation: revolve 60s linear 0s infinite ;
+	width:600px;
+	height:600px;
+	text-align: center;
+	display: inline;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-300px;
+	margin-top:-300px;
+}
+.mars
+{	animation: revolve 60s linear 0s infinite ;
+	width:500px;
+	height:500px;
+	text-align: center;
+	display: inline;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-250px;
+	margin-top:-250px;
+}
+.jupiter
+{
+	animation: revolve 60s linear 0s infinite ;
+	width:500px;
+	height:500px;
+	text-align: center;
+	display: inline;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-250px;
+	margin-top:-250px;
+}
+.saturn
+{
+	/*animation: revolve 60s linear 0s infinite ;*/
+	width:700px;
+	height: 375px;
+	text-align: center;
+	position: absolute;
+	display: inline;
+	left:50%;
+	top:50%;
+	margin-left:-350px;
+	margin-top:-187.5px;
+	
+	
+}
+.uranus
+{
+	animation: revolve 60s linear 0s infinite ;
+	width:600px;
+	height:600px;
+	text-align: center;
+	display: inline;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-300px;
+	margin-top:-300px;
+}
+.neptune
+{
+	animation: revolve 60s linear 0s infinite ;
+	width:600px;
+	height:600px;
+	text-align: center;
+	display: inline;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-300px;
+	margin-top:-300px;
+}
+#st-container-1:checked ~ .st-scroll #st-panel-1 h2,
+#st-container-2:checked ~ .st-scroll #st-panel-2 h2,
+#st-container-3:checked ~ .st-scroll #st-panel-3 h2,
+#st-container-4:checked ~ .st-scroll #st-panel-4 h2,
+#st-container-5:checked ~ .st-scroll #st-panel-5 h2,
+#st-container-6:checked ~ .st-scroll #st-panel-6 h2,
+#st-container-7:checked ~ .st-scroll #st-panel-7 h2,
+#st-container-8:checked ~ .st-scroll #st-panel-8 h2,
+#st-container-9:checked ~ .st-scroll #st-panel-9 h2{
+	-webkit-animation:moveUp 1s ease-in-out 0.2s backwards;
+	-moz-animation:moveUp 1s ease-in-out 0.2s backwards;
+	-o-animation:moveUp 1s ease-in-out 0.2s backwards;
+	-ms-animation:moveUp 1s ease-in-out 0.2s backwards;
+	animation:moveUp 1s ease-in-out 0.2s backwards;
+}
+
+#st-container-1:checked ~ .st-scroll #st-panel-1 p,
+#st-container-2:checked ~ .st-scroll #st-panel-2 p,
+#st-container-3:checked ~ .st-scroll #st-panel-3 p,
+#st-container-4:checked ~ .st-scroll #st-panel-4 p,
+#st-container-5:checked ~ .st-scroll #st-panel-5 p,
+#st-container-6:checked ~ .st-scroll #st-panel-6 p,
+#st-container-7:checked ~ .st-scroll #st-panel-7 p,
+#st-container-8:checked ~ .st-scroll #st-panel-8 p,
+#st-container-9:checked ~ .st-scroll #st-panel-9 p{
+	-webkit-animation:moveUp 1s ease-in-out 0.2s backwards;
+	-moz-animation:moveUp 1s ease-in-out 0.2s backwards;
+	-o-animation:moveUp 1s ease-in-out 0.2s backwards;
+	-ms-animation:moveUp 1s ease-in-out 0.2s backwards;
+	animation:moveUp 1s ease-in-out 0.2s backwards;
+	
+}
+#st-panel-1 h2,
+#st-panel-2 h2,
+#st-panel-3 h2,
+#st-panel-3 h2,
+#st-panel-4 h2,
+#st-panel-5 h2,
+#st-panel-6 h2,
+#st-panel-7 h2,
+#st-panel-8 h2,
+#st-panel-9 h2
+{
+	font-weight: 700;
+	font-size: 32px;
+	display: inline;
+	border: #fff  2px solid;
+	border-radius:25px;
+	position: absolute;
+	left:80px;
+	top:50px;
+	padding: 10px;
+	color: aliceblue
+}
+  			.suggest-1,
+ 			.suggest-2,
+			.suggest-3,
+			.suggest-4,
+			.suggest-5,
+			.suggest-6,
+			.suggest-7,
+			.suggest-8,
+			.suggest-9,
+			.suggest-10,
+			.suggest-11,
+			.suggest-12,
+			.suggest-13,
+			.suggest-14,
+			.suggest-15,
+			.suggest-16,
+			.suggest-17,
+			.suggest-18		
+{
+	font-weight: 700;
+	font-size: 20px;
+	display: inline-block;
+	border: #fff  2px solid;
+	border-radius:25px;
+	padding: 10px;
+	width: 500px;
+	color: aliceblue;
+}
+.suggest-1
+{
+	position: absolute;
+	left:80px;
+	top:130px;
+}
+.suggest-2
+{
+	position: absolute;
+	left:80px;
+	top:430px;
+}
+.suggest-3
+{
+	
+}
+.suggest-4
+{
+	
+}
+.suggest-5
+{
+	
+}
+.suggest-6
+{
+	
+}
+.suggest-7
+{
+	
+}
+.suggest-8
+{
+	
+}
+.suggest-9
+{
+	
+}
+.suggest-10
+{
+	
+}
+.suggest-11
+{
+	
+}
+.suggest-12
+{
+	
+}
+.suggest-13
+{
+	
+}
+.suggest-14
+{
+	
+}
+.suggest-15
+{
+	
+}
+.suggest-16
+{
+	
+}
+.suggest-17
+{
+	
+}
+.suggest-18
+{
+	
+}
+
+
+@-webkit-keyframes moveUp {
+	0%{
+		-webkit-transform:translateY(4
+			0px);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform:translateY(0px);
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes moveUp {
+	0%{
+		-webkit-transform:translateY(40px);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform:translateY(0px);
+		opacity: 1;
+	}
+}
+
+@-o-keyframes moveUp {
+	0%{
+		-webkit-transform:translateY(40px);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform:translateY(0px);
+		opacity: 1;
+	}
+}
+
+
+
+@keyframes moveUp {
+	0%{
+		-webkit-transform:translateY(40px);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform:translateY(0px);
+		opacity: 1;
+	}
+}
+/*定义飞船动画*/
+@-webkit-keyframes spacefly 
+{
+	0%
+	{
+		left:300px;top:300px;
+	}
+
+	100% {
+		left:1200px;top:1200px;
+	}
+}
+/*定义陨石动画*/
+@-webkit-keyframes shotting-1
+{
+	0%
+	{
+		left:200px;
+		top:200px;
+		
+	}
+
+	50% {
+		top:500px;
+		left:500px;
+	}
+	100%
+	{
+		left: 200px;
+		top:200px;
+	}
+}
+
+#st-container-6:checked ~ .st-scroll #st-panel-6 .meteorolite
+{
+	width: 80px;
+	position: relative;
+	animation:shotting-1 30s ease-in 0s alternate;
+}
+/*介绍*/
+.st-panel-1 h2
+{
+	
+}
