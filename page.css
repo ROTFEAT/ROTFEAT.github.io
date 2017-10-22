@@ -1,8 +1,3 @@
-/* CSS Document */
-/*制作：
-南开大学滨海学院
-王亦昕
-商婧*/
 
 body {
     font-family: Georgia, serif;
@@ -12,6 +7,8 @@ body {
     overflow: hidden;
     -webkit-font-smoothing: antialiased;/*设置字体抗锯齿或者平滑度*/
 	 text-shadow: 1px 1px 1px rgba(151, 24, 64, 0.2);
+	width: 100%;
+	height:100%;
 	
 }
 .st-container
@@ -21,27 +18,21 @@ body {
     background: -webkit-radial-gradient(center,farthest-corner,#01a08e,#1c5c99); /* Safari 5.1 - 6.0 */
     background: -o-radial-gradient(center,farthest-corner,#01a08e,#1c5c99); /* Opera 11.6 - 12.0 */
     background: -moz-radial-gradient(center,farthest-corner,#01a08e,#1c5c99); /* Firefox 3.6 - 15 */
-    background: radial-gradient(center,farthest-corner,#01a08e,#1c5c99); /* 标准的语法（必须放在最后） */
+    background: radial-gradient(center,farthest-corner,#01a08e,#1c5c99); /* 标准的语法*/
 	position: absolute;
 	background-position: center;
-    left: 0%;
-    top: 0%;
+    left: 0;
+    top: 0;
     
 }
 
 a {
     text-decoration: none;
     color: #555;
+	display:block;
 }
 
-.clr {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    clear: both;
-    padding: 0;
-    margin: 0;
-}
+
 .st-container > input,
 .st-container > a {
     height:11.1111%;
@@ -49,6 +40,7 @@ a {
     position: fixed;
     right: 0;
     cursor: pointer;
+	
 }
 .st-container > input {
     opacity: 0;
@@ -691,6 +683,25 @@ a {
 	width: 60px;
 	left:55%;
 	top:49%
+}
+@-webkit-keyframes fly-1
+{
+	0%{
+		left: 300px;
+		
+	}
+	100%{
+		
+		left:600px;
+	}
+}
+.ufo-1
+{
+	width: 100px;
+	animation:fly-1 5 ease-in 0s alternate;
+	position: relative;
+	top:30%;
+	left: 30%;
 }
 
 
