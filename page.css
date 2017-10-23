@@ -31,6 +31,10 @@ a {
     color: #555;
 	display:block;
 }
+p
+{
+	text-indent: 20px;
+}
 
 
 .st-container > input,
@@ -342,6 +346,7 @@ a {
 	top:50%;
 	margin-left:-200px;
 	margin-top:-200px;
+	z-index: 10;
 }
 #st-container-1:checked ~ .st-scroll #st-panel-1 h2,
 #st-container-2:checked ~ .st-scroll #st-panel-2 h2,
@@ -528,12 +533,14 @@ a {
 	position: absolute;
 	left:80px;
 	top:130px;
+	z-index: 12
 }
 .suggest-18
 {
 	position: absolute;
 	right:150px;
 	top:130px;
+	z-index: 12
 }
 
 
@@ -597,43 +604,89 @@ a {
 }
 .spacefly-1
 {
-	position: absolute;
-	left:600px;top:300px;
-	width: 70px;
-}
-#st-container-4:checked ~ .st-scroll #st-panel-4 .spacefly-1
-{
-	width: 70px;
 	position:relative;
-	animation:spacefly-1 20s ease-in 0s alternate;
+	left:600px;
+	top:300px;
+	width: 70px;
+	animation:spacefly-1 20s linear 0s alternate;
 }
+
 /*定义陨石动画*/
 @-webkit-keyframes shotting-1
 {
 	0%
 	{
-		left:200px;
-		top:200px;
+		left:400px;
+		top:450px;
 		
 	}
-
-	50% {
-		top:500px;
-		left:500px;
-	}
+	
 	100%
 	{
-		left: 200px;
-		top:200px;
+		left:900px;
+		top:500px;
+	}
+}
+@-webkit-keyframes shotting-2
+{
+	0%
+	{
+		left:450px;
+		top:600px;
+		
+	}
+	
+	100%
+	{
+		left:900px;
+		top:500px;
 	}
 }
 /*陨石*/
+
+.meteorolite_1
+{		
+		position: absolute;
+		left:400px;
+		top:450px;
+		
+	
+}
 #st-container-6:checked ~ .st-scroll #st-panel-6 .meteorolite_1
 {
 	width: 80px;
 	position: relative;
-	animation:shotting-1 30s ease-in 0s alternate;
+	animation:shotting-1 30s linear 0s alternate;
 }
+@-webkit-keyframes shotting-2
+{
+	0%
+	{
+		left:450px;
+		top:600px;
+		
+	}
+	
+	100%
+	{
+		left:900px;
+		top:500px;
+	}
+}
+.meteorolite_1_1
+{		
+		position: absolute;
+		left:450px;
+		top:600px;
+	
+}
+#st-container-6:checked ~ .st-scroll #st-panel-6 .meteorolite_1_1
+{
+	width: 40px;
+	position: relative;
+	animation:shotting-2 30s linear 0s alternate;
+}
+
 .meteorolite_2
 {
 	position: absolute;
@@ -688,20 +741,24 @@ a {
 {
 	0%{
 		left: 300px;
-		
+		top:30%;
 	}
 	100%{
-		
+		top:30%;
 		left:600px;
 	}
 }
 .ufo-1
 {
 	width: 100px;
-	animation:fly-1 5 ease-in 0s alternate;
-	position: relative;
+	position: absolute;
 	top:30%;
 	left: 30%;
+}
+#st-container-2:checked ~ .st-scroll #st-panel-2 .ufo-1
+{
+	animation:fly-1 10 ease-in 0s alternate;
+	position: relative;
 }
 
 

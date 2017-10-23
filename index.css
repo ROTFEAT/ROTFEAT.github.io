@@ -7,7 +7,10 @@ body
 	left:0;
 	top:0;
 	background: #4d5c6d;
+	
+	background-position: center;
 	overflow: hidden;
+	
 	
 }
 /*公转动画*/
@@ -23,6 +26,7 @@ body
 	}
 
 }
+
 
 .system
 {
@@ -122,12 +126,12 @@ a
 	color: #323e4a;
 	font-weight: 700;
 	font-size: 30px;
-	 text-shadow: 1px 1px 1px 
+	text-shadow: 1px 1px 1px ;
 	cursor: pointer;
 	border: #323e4a  2px solid;
 	border-radius:25px;
 }
 a:hover
 {
-	background: #3F444D;
+	background:#57687B;
 }
